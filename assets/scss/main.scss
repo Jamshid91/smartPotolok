@@ -697,241 +697,111 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    background: #0009;
+    background: #0008;
     z-index: 999;
     display: flex;
     align-items: center;
     justify-content: center;
     &-close {
       position: absolute;
-      top: 28px;
-      right: 28px;
+      top: 20px;
+      right: 20px;
       background: transparent;
-      transition: .3s all;
-      &:hover {
-        transform: rotate(180deg);
-      }
     }
     &-content {
-      width: 456px;
-      border-radius: 20px;
-      background: #fff;
-      padding: 31px 28px 27px;
+      width: 500px;
+      border-radius: 25px;
       position: relative;
       animation: popUp-anim .3s linear;
-      .form {
-        &-title {
-          span {
-            font-size: 12px;
-            line-height: 14.5px;
-            color: #0008;
-          }
-          p {
-            font-size: 22px;
-            line-height: 26.5px;
-            color: #000;
-          }
+    }
+  }
+
+  .popUp-order {
+    .popUp-content {
+      background: #181818;
+      color: #fff;
+      padding: 65px 20px 47px;
+      .smart-potolok {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+      .popUp-form {
+        width: 284px;
+        .form-title {
+          font-size: 25px;
+          line-height: 40px;
+          margin-bottom: 25px;
         }
-        &-checks {
-          margin: 20px 0 18px;
-          &__title {
-            font-size: 16px;
-            line-height: 19px;
-            font-weight: 400;
-            margin-bottom: 10px;
-          }
-          .check {
-            display: flex;
-            align-items: center;
-            &:first-child {
-              margin-right: 30px;
-            }
-            input[type="radio"] {
-              appearance: none;
-              width: 18px;
-              height: 18px;
-              border-radius: 50%;
-              border: 1px solid #B1B1B1;
-              margin-right: 8px;
-              position: relative;
-              cursor: pointer;
-              &::before {
-                content: '';
-                display: none;
-                min-width: 12px;
-                min-height: 12px;
-                border-radius: 50%;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background: linear-gradient(0deg, #24A363 -79.63%, #4BDD48 160.19%);
-              }
-            }
-            label {
-              cursor: pointer;
-            }
-            input[type="radio"]:checked {
-              border: 1px solid #24A363;
-            }
-            input[type="radio"]:checked::before {
-              display: block;
-            }
-          }
-        }
-        &_select {
-          position: relative;
-          margin-bottom: 12px;
-          .select {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        .input-box {
+          width: 100%;
+          margin-bottom: 15px;
+          .form__inp {
             width: 100%;
-            height: 50px;
-            border-radius: 50px;
-            border: 1px solid #EAEAEA;
-            background: #F9F9F9;
-            padding: 0 12px;
-            cursor: pointer;
-            &-active {
-              font-size: 16px;
-              line-height: 19px;
+            height: 55px;
+            border-radius: 8px;
+            background: #fff;
+            font-size: 14px;
+            line-height: 20px;
+            border: 3px solid #fff;
+            color: #000;
+            padding: 15px 19px;
+            transition: .3s all;
+            &::placeholder {
               color: #000;
             }
-            svg {
-              transition: .2s all;
-            }
-          }
-          .options {
-            position: absolute;
-            left: 0;
-            top: 100%;
-            width: 100%;
-            max-height: 120px;
-            overflow-y: scroll;
-            border: 1px solid #EAEAEA;
-            border-top: none;
-            background: #F9F9F9;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            display: none;
-            z-index: 3;
-            &::-webkit-scrollbar {
-              width: 4px;
-              background: transparent;
-            }
-            &::-webkit-scrollbar-thumb {
-              background: #5E6D6D;
-            }
-            li {
-              padding: 5px 15px;
-              cursor: pointer;
-              font-size: 16px;
-              line-height: 20px;
-              &:hover {
-                background: #43C56F;
-                color: #fff;
-              }
-              &:first-child {
-                padding-top: 10px;
-              }
-              &:last-child {
-                padding-bottom: 10px;
-              }
+            &:focus {
+              border-color: #A1C249;
             }
           }
         }
-        .showOptions {
-          .select {
-            border-radius: 10px;
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
-            svg {
-              transform: rotate(180deg);
-            }
-          }
-          .options {
-            display: block;
-          }
-        }
-        &-box {
-          margin-bottom: 12px;
-          img {
-            position: absolute;
-            top: 16px;
-            right: 13px;
-          }
-          input {
-            width: 100%;
-              height: 50px;
-              border-radius: 50px;
-              border: 1px solid #EAEAEA;
-              background: #F9F9F9;
-              padding: 0 12px;
-              font-size: 16px;
-              &::placeholder {
-                color: #000;
-              }
-              &:focus {
-                border-color: #43C56F;
-              }
-          }
-        }
-        .form-btn {
-          width: 100%;
-          height: 50px;
-          border-radius: 50px;
-          background: linear-gradient(92deg, #2CB570 -28.74%, #43C56F 34.53%, #43E040 99.14%);
-          font-size: 18px;
-          font-weight: 500;
-          color: #fff;
-          margin-top: 60px;
-          span {
-            margin-right: 10px;
-          }
-          &:hover {
-            background: #5A6069;
-          }
-        }
-      }
 
-      .form__title {
-        font-weight: 500;
-        font-family: 'Raleway', sans-serif;
-        font-size: 22px;
-        line-height: 26px;
-        color: #113A1D;
-        margin-bottom: 24px;
-      }
-      .form__subtitle {
-        font-weight: 500;
-        font-family: 'Raleway', sans-serif;
-        font-size: 16px;
-        line-height: 19px;
-        color: #113A1D;
-      }
-      &:last-child {
-        padding: 52px 48px 37px;
+        .check-box {
+          font-size: 12px;
+          line-height: 14px;
+          color: #E1E2E0;
+          cursor: pointer;
+          .form__check {
+            appearance: none;
+            min-width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            border: 1px solid #fff;
+            margin-right: 15px;
+            position: relative;
+           &::before {
+            content: url(../img/svg/checked.svg);
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            display: none;
+           }
+           &:checked::before {
+            display: block;
+           }
+          }
+          label {
+            cursor: pointer;
+          }
+        }
+
+        .form-btn {
+          width: 200px;
+          height: 55px;
+          border-radius: 13px;
+          background: #B1D74B;
+          font-size: 14px;
+          line-height: 7px;
+          font-weight: 600;
+          margin-top: 16px;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
       }
     }
   }
-  .popUp-call {
-    .popUp-content {
-      padding: 52px 48px 37px;
-    }
-    .form-box {
-      margin-bottom: 16px;
-      label {
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: 500;
-        margin-bottom: 12px;
-      }
-    }
-    .form-btn {
-      margin-top: 26px !important;
-    }
-  }
+
   .popUpHide  {
     animation: popUp-anim-hide .5s linear !important;
   }

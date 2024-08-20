@@ -753,8 +753,6 @@
     }
   }
 
-  
-  
   .footer {
     .footer-top {
       flex-direction: column;
@@ -804,6 +802,12 @@
           }
         }
       }
+    }
+  }
+
+  .popUp {
+    &-content {
+      width: 96%;
     }
   }
 }
