@@ -112,6 +112,62 @@
         }
       }
     }
+
+    .coatings {
+      .title-subtext {
+        font-size: 24px;
+        line-height: 29px;
+      }
+      .title-text {
+        font-size: 32px;
+        line-height: 60px;
+      }
+      .coatings-head {
+        img {
+          &:nth-child(1) {
+            width: 48px;
+          }
+          &:nth-child(2) {
+            width: 54px;
+          }
+          &:nth-child(3) {
+            width: 49px;
+          }
+        }
+      }
+      .coatings-box {
+        margin-bottom: 100px;
+        .coatings-title {
+          width: 50%;
+          padding: 25px;
+          font-size: 32px;
+          line-height: 39px;
+        }
+        .coatings-info {
+          .info-text {
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
+        .coatings-images {
+          .coatings-img {
+            height: 264px;
+          }
+        }
+        &:nth-child(2) {
+          .coatings-title {
+            margin-bottom: 0;
+          }
+        }
+      }
+      .coatings-files {
+        width: 620px;
+        .file {
+          width: 49%;
+          margin-bottom: 20px;
+        }
+      }
+    }
   }
 }
 
@@ -310,7 +366,7 @@
       .smart-box {
         padding: 35px 24px 50px;
       }
-      .title-text {
+      .title-subtext {
         font-size: 24px;
         line-height: 36px;
       }
@@ -486,6 +542,64 @@
         }
       }
     }
+
+    
+
+    .coatings {
+      margin: 24px 0 100px;
+      .title-subtext {
+        font-size: 20px;
+        line-height: 24px;
+      }
+      .title-text {
+        font-size: 24px;
+        line-height: 60px;
+      }
+      .coatings-head {
+        img {
+          &:nth-child(1) {
+            width: 48px;
+          }
+          &:nth-child(2) {
+            width: 54px;
+          }
+          &:nth-child(3) {
+            width: 49px;
+            margin-right: 40px;
+          }
+        }
+      }
+      .coatings-box {
+        .coatings-title {
+          width: auto;
+          padding: 25px 100px 25px 25px;
+          font-size: 24px;
+          line-height: 29px;
+          display: inline-block;
+        }
+        .coatings-info {
+          .info-text {
+            font-size: 18px;
+            line-height: 21px;
+          }
+        }
+        .coatings-images {
+          margin-top: 0;
+          .coatings-img {
+            width: 49%;
+            height: 234px;
+            margin-top: 24px;
+          }
+        }
+      }
+      .coatings-files {
+        width: 470px;
+        .file {
+          width: 49%;
+          margin-bottom: 20px;
+        }
+      }
+    }
   }
 
   
@@ -559,20 +673,20 @@
     font-size: 24px;
     font-weight: 36px;
   }
-  .page-in {
-    background: #fff;
-    .main {
-      background: #fff;
-    }
-    .header {
-      &::before {
-        display: none;
-      }
-      .header-top {
-        background: #fff;
-      }
-    }
-  }
+  // .page-in {
+  //   background: #fff;
+  //   .main {
+  //     background: #fff;
+  //   }
+  //   .header {
+  //     &::before {
+  //       display: none;
+  //     }
+  //     .header-top {
+  //       background: #fff;
+  //     }
+  //   }
+  // }
   .header {
     margin-bottom: 24px;
     &::before {
@@ -687,7 +801,7 @@
       .smart-box {
         padding: 30px 15px 40px;
       }
-      .title-text {
+      .title-subtext {
         font-size: 16px;
         line-height: 24px;
       }
@@ -958,7 +1072,6 @@
       }
     }
 
-    
 
     .faqs {
       margin: 30px 0 50px;
@@ -1004,6 +1117,61 @@
             font-size: 14px;
             line-height: 21px;
           }
+        }
+      }
+    }
+
+    
+
+    .coatings {
+      margin: 34px 0 100px;
+      &::before {
+        height: 73%;
+      }
+      .title-text {
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 10px;
+        width: 100%;
+      }
+      .coatings-head {
+         img {
+          &:nth-child(3) {
+            margin-right: 0;
+          }
+         }
+      }
+      .coatings-box {
+        margin-bottom: 40px;
+        .coatings-title {
+          width: auto;
+          padding: 15px 10px;
+          font-size: 16px;
+          line-height: 19px;
+          width: 100%;
+          border-radius: 15px;
+        }
+        .coatings-info {
+          padding: 25px 10px;
+          .info-text {
+            font-size: 16px;
+            line-height: 19px;
+          }
+        }
+        .coatings-images {
+          margin-top: 10px;
+          .coatings-img {
+            width: 49%;
+            height: 98px;
+            margin-top: 10px;
+          }
+        }
+      }
+      .coatings-files {
+        width: 100%;
+        .file {
+          width: 49%;
+          margin-bottom: 20px;
         }
       }
     }
