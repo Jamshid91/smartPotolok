@@ -84,6 +84,34 @@
         margin: 40px 0 70px;
       }
     }
+
+    .advantages {
+      .advantages-box {
+        .advantages-item {
+          min-height: 391px;
+          padding: 25px;
+          .title-subtext {
+            font-size: 32px;
+            line-height: 45px;
+          }
+          .icons{
+            margin: 50px 0 30px;
+            max-width: 100%;
+          }
+          .item-text {
+            font-size: 12px;
+            line-height: 18px;
+          }
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(7) {
+            .icons {
+              margin: 50px 0 30px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -112,6 +140,38 @@
       }
       .btns {
         width: 37%;
+      }
+    }
+  }
+
+  .main {
+    .faqs {
+      .title-text {
+        font-size: 36px;
+        line-height: 52px;
+      }
+      .faqs-box {
+        padding: 40px 25px;
+      }
+      .faqs-head {
+        margin: 22px 0;
+        .head-text {
+          &::before {
+            width: 107px;
+          }
+          &:first-child {
+            margin-right: 60px;
+          }
+        }
+      }
+      .faqs-lists {
+        .faqs-item {
+          .item-name {
+            font-size: 18px;
+            min-width: 228px;
+          }
+        
+        }
       }
     }
   }
@@ -219,6 +279,9 @@
 }
 
 @media (max-width: 991px) {
+  .head-page {
+    margin: 0 0 10px;
+  }
   .main {
     .wrapper {
       .wr-item {
@@ -345,6 +408,84 @@
         margin: 20px 0 40px;
       }
     }
+
+    .advantages {
+      .advantages-box {
+        grid-template-columns: repeat(2, 1fr);
+        .advantages-item {
+          min-height: 360px;
+          padding: 23px;
+          .icons{
+            margin: 20px 0;
+          }
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(7) {
+            .icons {
+              margin: 20 0;
+            }
+          }
+          &:nth-child(4) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 3;
+          }
+          &:nth-child(8) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 5;
+            grid-row-end: 5;
+          }
+          &:nth-child(9) {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 6;
+            grid-row-end: 6;
+          }
+        }
+      }
+    }
+
+    .faqs {
+      .title-text {
+        font-size: 24px;
+        line-height: 36px;
+      }
+      .faqs-head {
+        margin: 20px 0;
+        font-size: 18px;
+        line-height: 30px;
+        .head-text {
+          &:first-child {
+            margin-right: 20px;
+          }
+        }
+      }
+      .faqs-box {
+        padding: 40px 20px;
+      }
+      .faqs-lists {
+        .faqs-item {
+          flex-direction: column;
+          margin-bottom: 0;
+          .item-name {
+            font-size: 18px;
+            min-width: 100%;
+            
+            span {
+              &:first-child {
+                display: none;
+              }
+              &:last-child {
+                display: block;
+              }
+            }
+          }
+        
+        }
+      }
+    }
   }
 
   
@@ -417,6 +558,20 @@
   .title-text {
     font-size: 24px;
     font-weight: 36px;
+  }
+  .page-in {
+    background: #fff;
+    .main {
+      background: #fff;
+    }
+    .header {
+      &::before {
+        display: none;
+      }
+      .header-top {
+        background: #fff;
+      }
+    }
   }
   .header {
     margin-bottom: 24px;
@@ -749,6 +904,107 @@
       }
       .swiper-btns {
         display: none !important;
+      }
+    }
+
+    
+    .advantages {
+      .advantages-box {
+        grid-template-columns: repeat(1, 1fr);
+        .advantages-item {
+          min-height: auto;
+          padding: 20px 18px;
+          .title-subtext {
+            font-size: 20px;
+            line-height: 30px;
+          }
+          .item-text {
+            font-size: 14px;
+            line-height: 27px;
+          }
+          .icons{
+            margin: 30px 0;
+          }
+          &:nth-child(3),
+          &:nth-child(4),
+          &:nth-child(7) {
+            .icons {
+              margin: 30px 0;
+            }
+          }
+          &:nth-child(4) {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 5;
+            grid-row-end: 5;
+          }
+          &:nth-child(8) {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 8;
+            grid-row-end: 8;
+          }
+          &:nth-child(9) {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 9;
+            grid-row-end: 9;
+            min-height: 180px;
+            img {
+              object-position: center;
+            }
+          }
+        }
+      }
+    }
+
+    
+
+    .faqs {
+      margin: 30px 0 50px;
+      .faqs-head {
+        margin: 20px 0 30px;
+        font-size: 18px;
+        line-height: 30px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .head-text {
+          margin-top: 20px;
+          span {
+            display: none;
+          }
+          &:first-child {
+            margin: 0;
+          }
+          &::before {
+            margin: 0 0 10px 0;
+          }
+        }
+      }
+      .faqs-box {
+        width: 100%;
+        padding: 0;
+      }
+      .faqs-lists {
+        .faqs-item {
+          flex-direction: column;
+          margin-bottom: 0;
+          .item-name {
+            text-align: center;
+            justify-content: center;
+          }
+          .item-text1 {
+            width: 50% !important;
+            font-size: 14px;
+            line-height: 21px;
+          }
+          .item-text2 {
+            width: 50% !important;
+            font-size: 14px;
+            line-height: 21px;
+          }
+        }
       }
     }
   }
