@@ -372,9 +372,6 @@ input, textarea, select, button {
   position: relative;
   z-index: 2;
 }
-.main .wrapper .wr-item {
-  height: 100vh;
-}
 .main .wrapper .wr-item .item-img {
   width: 100%;
   height: 500px;
