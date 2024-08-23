@@ -118,10 +118,6 @@
         font-size: 24px;
         line-height: 29px;
       }
-      .title-text {
-        font-size: 32px;
-        line-height: 60px;
-      }
       .coatings-head {
         img {
           &:nth-child(1) {
@@ -1106,13 +1102,18 @@
       &::before {
         height: 73%;
       }
-      .title-text {
+      .title-subtext {
         font-size: 18px;
-        line-height: 21px;
-        margin-top: 10px;
-        width: 100%;
+        line-height: 24px;
       }
       .coatings-head {
+        margin: 20px 0 30px;
+        .title-subtext {
+          font-size: 18px;
+          line-height: 21px;
+          margin-top: 10px;
+          width: 100%;
+        }
          img {
           &:nth-child(3) {
             margin-right: 0;
